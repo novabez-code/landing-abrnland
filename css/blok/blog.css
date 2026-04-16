@@ -1,0 +1,27 @@
+.blog {
+  padding: 60px 0;
+}
+.blog__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px 300px 350px;
+  gap: 30px;
+}
+
+.blog__title {
+  font-size: var(--font-size-h2);
+  font-weight: 400;
+
+  margin-bottom: 30px;
+}
+
+.blog .card__title {
+  margin: 15px 0 14px 0;
+}
+
+.blog__subcard-1 {
+  grid-row: span 2;
+}
+.blog__subcard-2 {
+  grid-column: span 2;
+}

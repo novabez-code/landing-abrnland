@@ -1,0 +1,33 @@
+.container--black.footer {
+  border-top: 1px solid #959daf;
+}
+
+.container.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px 0;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+
+.footer__link {
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 600;
+  color: var(--color-text-light);
+  transition: all 0.2s linear;
+}
+.footer__link:hover {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+
+  border-radius: 5px;
+}

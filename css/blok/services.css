@@ -1,0 +1,24 @@
+.services {
+  margin-bottom: 90px;
+}
+.services__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 210px);
+  gap: 30px;
+}
+
+.services__title {
+  font-size: var(--font-size-h2);
+  font-weight: 400;
+
+  margin-bottom: 30px;
+}
+.services__card {
+  grid-row: span 3;
+}
+
+.services__subtitle-main {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}

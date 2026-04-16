@@ -1,0 +1,96 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card__img {
+  width: 100%;
+
+  flex-grow: 1;
+  object-fit: cover;
+  object-position: center;
+  min-height: 0;
+
+  transition: all 0.2s linear;
+}
+
+.card__title {
+  font-weight: 400;
+  font-size: var(--font-size-h);
+}
+
+.card__text {
+  font-weight: 400;
+  font-size: var(--font-size-regular);
+  line-height: 28px;
+}
+
+.card--hover {
+  background-color: var(--color-bg-dark);
+  color: var(--color-bg-light);
+  transition: all 0.2s linear;
+}
+.card--hover:hover {
+  cursor: pointer;
+  transform: translateY(-5px) translateX(-5px);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card--hover div {
+  padding-bottom: 10px;
+  transition: all 0.2s linear;
+}
+.card--hover:hover div {
+  padding-left: 10px;
+}
+
+.subcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-light);
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.2s linear;
+}
+
+.subcard:hover {
+  cursor: pointer;
+  transform: translateY(-5px) translateX(-5px);
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.subcard__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.subcard:hover .subcard__bg {
+  border: 1px solid var(--color-bg-dark);
+  background-color: var(--color-bg-dark);
+}
+.subcard__bg {
+  border: 1px solid #e3e4e7;
+  background-color: var(--color-bg-light);
+  padding: 18px 30px;
+  z-index: 2;
+
+  transition: all 0.2s linear;
+}
+.subcard__title {
+  font-weight: 400;
+  font-size: var(--font-size-h);
+}
