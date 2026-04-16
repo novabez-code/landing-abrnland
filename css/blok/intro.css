@@ -10,7 +10,7 @@
 }
 
 .intro__main {
-  background-image: url("img/blok1/img_blok1_1.webp");
+  background-image: url("../img/blok1/img_blok1_1.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
